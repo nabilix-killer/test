@@ -1,0 +1,333 @@
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    body{
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        background: linear-gradient(   90deg, rgb(117, 0, 111) , rgba(86, 0, 184, 0.979));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+
+    }
+    .container::before{
+    content: '';
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: linear-gradient(90deg , pink , rgb(212, 0, 255));
+    transform: translate( -150px , -100px  );
+    }
+    .container::after{
+        content: '';
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: linear-gradient(90deg , pink , rgb(212, 0, 255));
+    transform: translate(730px , -200px);
+    z-index: -1;
+    }
+    .container .box{
+    width: 115%;
+    max-height: 600px;
+    background: rgba(255 ,255 ,255 ,0.1);
+    border-radius: 25px;
+    z-index: 1;
+    backdrop-filter: blur(24px);
+    position: relative;
+    right: 90px;
+    }
+    .product-box{
+        /* background-color: red; */
+    }
+    .wrapper{
+    position: relative;
+    right: 20px;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    .text{
+        flex-basis: 45%;
+    }
+    .all-images{
+    height: 80vh;
+    display: flex;
+    }
+    .small-images{
+    display: flex;
+    flex-direction: column;
+    }
+    .small-images img{
+    height: 19vh ;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+    }
+    .small-images img:hover{
+        opacity: 1;
+    }
+    .main-images img{
+    height: 100%;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    .information{
+    width: 290px;
+    height: 360px;
+    /* background: green; */
+    display: flex;
+    margin-left: 60px;
+    position: relative;
+    bottom: 50px;
+    }
+    h2{
+    margin-left: 90px;
+    font-size: 35px;
+    color: white;
+    background-image: linear-gradient(43deg ,  #ff0095 ,
+    #ff0000   );
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    }
+    .information input{
+    width: 300px;
+    height: 40px;
+    margin: 30px 0 0 30px;
+    text-align: center;
+    border-radius: 9px;
+    border: none;
+
+    }
+    .stock{
+    display: flex;
+    justify-content: center;    
+    margin-top: 20px;
+    z-index: 5  ;
+    position: relative
+   
+    }
+    .send{
+        font-size: 20px;
+    font-weight: 600;
+
+    }
+    .send:hover{
+    background: green;
+
+    }
+    @media (max-width: 1100px)  {
+   .information{
+    width: 450px;
+    height: 360px;
+    /* background: green;   */
+    display: flex;
+    margin-left: 0px;
+    position: relative;
+    bottom: 90px;
+  
+   }
+   .information input{
+    width: 300px;
+    height: 40px;
+    margin: 30px 0 0 20px;
+    text-align: center;
+    border-radius: 9px;
+    border: none;
+    }
+    .product-box{
+        /* background: red; */
+        transform: scale(0.85);
+        position: relative;
+        bottom: 71px;
+    }
+    .container .box{
+        margin-left: 50px;
+        width: 90%;
+        max-height: 500px;
+        background: rgba(255 ,255 ,255 ,0.1);
+        border-radius: 25px;
+        z-index: 1;
+        backdrop-filter: blur(24px);
+        position: relative;
+        right: 0px;
+        }
+        .container::before{
+            content: '';
+            position: absolute;
+            height: 240px;
+            width: 240px;
+            border-radius: 50%;
+            background: linear-gradient(90deg , pink , rgb(212, 0, 255));
+            transform: translate( -0px , -100px  );
+            }
+            .container::after{
+                content: '';
+            position: absolute;
+            height: 240px;
+            width: 240px;
+            border-radius: 50%;
+            background: linear-gradient(90deg , pink , rgb(212, 0, 255));
+            transform: translate(750px , -200px);
+            z-index: -1;
+            }
+           
+    }
+    @media (max-width:950px)  {
+        .information{
+            width: 450px;
+            height: 360px;
+            /* background: green;   */
+            display: flex;
+            margin-left: 0px;
+            position: relative;
+            right: 60px;
+            bottom: 90px;
+           }
+           .information input{
+            width: 250px;
+            height: 40px;
+            margin: 30px 0 0 20px;
+            text-align: center;
+            border-radius: 9px;
+            border: none;
+            }
+            .product-box{
+                transform: translateX(10px);
+                /* background: red; */
+                transform: scale(0.77);
+                position: relative;
+                right: 40px;
+                bottom: 71px;
+            }
+            .container .box{
+                margin-left: 330px;
+                width: 60%;
+                max-height: 500px;
+                background: rgba(255 ,255 ,255 ,0.1);
+                border-radius: 25px;
+                z-index: 1;
+                backdrop-filter: blur(24px);
+                position: relative;
+                left: 150px;
+                top: 250px;
+                }
+                .container::before{
+                    content: '';
+                    position: absolute;
+                    height: 240px;
+                    width: 240px;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg , pink , rgb(212, 0, 255));
+                    transform: translate( -0px , -100px  );
+                    }
+                    .container::after{
+                        content: '';
+                    position: absolute;
+                    height: 240px;
+                    width: 240px;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg , pink , rgb(212, 0, 255));
+                    transform: translate(750px , -200px);
+                    z-index: -1;
+                    }
+body{
+    width: 50%;
+    height: 30vh;
+}
+    }
+    @media (max-width:840px){
+        .information{
+            width: 450px;
+            height: 360px;
+            /* background: green;   */
+            display: flex;
+            margin-left: 0px;
+            position: relative;
+            right: 60px;
+            bottom: 10px;
+
+           }
+           h2{
+            display: none;
+           }
+           .information input{
+            width: 250px;
+            height: 40px;
+            margin: 30px 0 0 20px;
+            text-align: center;
+            border-radius: 9px;
+            border: none;
+            }
+            .product-box{
+                transform: translateX(10px);
+                /* background: red; */
+                transform: scale(0.77);
+                position: relative;
+                right: 150px;
+                bottom: 71px;
+            }
+            .container .box{
+                margin-left: 330px;
+                width: 60%;
+                max-height: 500px;
+                background: rgba(255 ,255 ,255 ,0.1);
+                border-radius: 25px;
+                z-index: 1;
+                backdrop-filter: blur(24px);
+                position: relative;
+                left: 150px;
+                top: 250px;
+                }
+                .container::before{
+                    content: '';
+                    position: absolute;
+                    height: 240px;
+                    width: 240px;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg , pink , rgb(212, 0, 255));
+                    transform: translate( -0px , -00px  );
+                    }
+                    .container::after{
+                        content: '';
+                    position: absolute;
+                    height: 240px;
+                    width: 240px;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg , pink , rgb(212, 0, 255));
+                    transform: translate(990px , -0px);
+                    z-index: -1;
+                    }
+                    .wrapper{
+                        flex-direction: column;
+                    }
+            
+                    .small-images{
+                        flex-direction: row;
+                        right: -25px;
+position: absolute;
+bottom: -155px;
+gap: 30px;
+                    }
+body{
+    width: 50%;
+    height: 30vh;
+}
+
+    }

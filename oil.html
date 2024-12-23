@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="oil.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       
+<div class="box">
+        <div class="wrapper">
+    <div class="product-box">
+        <div class="all-images">
+        <div class="small-images">
+            <img src="R.png" onclick="clickimg(this)">
+            <img src="R (1).png" onclick="clickimg(this)">
+            <img src="R (2).png" onclick="clickimg(this)">
+            <img src="2453.png" onclick="clickimg(this)">
+        </div>
+        <div class="main-images">
+            <img src="R.png" id="imagebox">
+        </div>
+        </div>
+        </div>
+        <div class="information">
+            <form method="post" action="" name="contact-form" >
+<h2>إملأ المعلومات</h2>
+<input class="name" type="text" placeholder="الإسم" name="your-name" >
+           <input type="text" name="your-number" placeholder="رقم الهاتف">
+<input type="text" name="maps" placeholder="الولاية- البلدية -الشارع">
+<div class="stock">
+<label for="quantity">Quantity:</label>
+<select name="quantity" id="quantity" bottom>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+</select>   
+</div>
+<input type="submit" value="confirm " class="send  ">
+            </form>
+        </div>
+    
+
+    </div>
+</div>
+ 
+<script>
+    
+function clickimg(smallImg){
+    var fullImg = document.getElementById("imagebox");
+    fullImg.src = smallImg.src
+}
+</script>
+
+
+</body>
+</html>
